@@ -15,6 +15,8 @@ def create_app():
     
     return app
 
+# 👇 ESTA LÍNEA ES LA QUE HACE FALTA PARA RENDER / GUNICORN
+app = create_app()
+
 if __name__ == "__main__":
-    app = create_app()
     app.run(debug=True)
