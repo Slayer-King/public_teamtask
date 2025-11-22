@@ -1,0 +1,88 @@
+.registro-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.registro-header {
+  display: flex;
+  align-items: center; 
+  width: 100%;
+}
+
+.registro-logo {
+  height: 80px;
+}
+
+.registro-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.registro-formulario input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.registro-formulario button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-principal {
+  background-color: #0078ff;
+  color: white;
+}
+
+.btn-google {
+  background-color: #E53935;
+  color: white;
+}
+
+.btn-microsoft {
+  background-color: #00BEAF;
+  color: white;
+}
+
+.registro-info {
+  flex: 1;
+  text-align: center;
+  max-width: 500px;
+}
+
+.registro-info img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .registro-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .registro-form, .registro-info {
+    max-width: 100%;
+  }
+}

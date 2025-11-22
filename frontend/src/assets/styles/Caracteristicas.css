@@ -1,0 +1,40 @@
+.caracteristicas {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  gap: 30px;
+  padding: 40px 10%;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+.caracteristica img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  filter: invert(1); /* cambia el negro por blanco */
+  transition: transform 0.3s ease;
+}
+
+.caracteristica img:hover {
+  transform: scale(1.1);
+}
+
+.caracteristica h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.caracteristica p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
